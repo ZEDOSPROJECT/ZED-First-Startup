@@ -1,0 +1,63 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  MoveScaled(0,0,61,45)
+  Text = ("Wizard")
+  Icon = Picture["ICON.png"]
+  { PictureBox1 PictureBox
+    MoveScaled(-2,0,92,63)
+    Picture = Picture["bg_fs.png"]
+    Stretch = True
+  }
+  { Button2 Button
+    MoveScaled(47,17,13,3)
+    Text = ("Back")
+  }
+  { Button1 Button
+    MoveScaled(47,14,13,3)
+    Text = ("Install")
+  }
+  { Label1 Label
+    MoveScaled(11,3,33,4)
+    Font = Font["Bold,Italic,+7"]
+    Foreground = Color.SelectedForeground
+    Text = ("FirstUse Wizard")
+  }
+  { Button3 Button
+    MoveScaled(47,41,13,3)
+    Text = ("Cancel")
+  }
+  { PictureBox2 PictureBox
+    MoveScaled(51,3,6,6)
+    Picture = Picture["ICON.png"]
+    Stretch = True
+  }
+  { Label2 Label
+    MoveScaled(2,14,44,30)
+    Background = Color.TooltipBackground
+    Text = ("   Main task of this computer:\n\n   Please select the main task of this computer\n   to ZED install all needed software")
+    Alignment = Align.TopLeft
+    Border = Border.Etched
+  }
+  { RadioButton1 RadioButton
+    MoveScaled(4,23,20,4)
+    Text = ("Basic")
+    Value = True
+  }
+  { RadioButton2 RadioButton
+    MoveScaled(4,27,20,4)
+    Text = ("Office")
+  }
+  { RadioButton3 RadioButton
+    MoveScaled(4,31,20,4)
+    Text = ("Games")
+  }
+  { RadioButton4 RadioButton
+    MoveScaled(4,35,20,4)
+    Text = ("Developer")
+  }
+  { RadioButton5 RadioButton
+    MoveScaled(4,39,20,4)
+    Text = ("Multimedia")
+  }
+}

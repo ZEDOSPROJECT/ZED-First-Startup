@@ -1,0 +1,47 @@
+# Gambas Form File 3.0
+
+{ Form Form
+  Move(0,0,704,336)
+  #Scaled = False
+  Text = ("Wizard")
+  Icon = Picture["ICON.png"]
+  Persistent = True
+  Resizable = False
+  AutoResize = True
+  { PictureBox1 PictureBox
+    Move(-16,0,736,504)
+    Picture = Picture["bg_fs.png"]
+    Stretch = True
+  }
+  { Label1 Label
+    Move(88,24,264,32)
+    Font = Font["Bold,Italic,+7"]
+    Foreground = Color.SelectedForeground
+    Text = ("FirstUse Wizard")
+  }
+  { Label2 Label
+    Move(16,112,568,216)
+    Background = Color.TooltipBackground
+    Text = ("HI!, Welcome to the FirstUse Wizard\n\nHere you go to install and configure all software to use ZED OS in her high power")
+    Alignment = Align.TopLeft
+    Border = Border.Etched
+  }
+  { PictureBox2 PictureBox
+    Move(640,24,48,48)
+    Picture = Picture["ICON.png"]
+    Stretch = True
+  }
+  { Button1 Button
+    Move(592,112,104,24)
+    Text = ("Next")
+  }
+  { Button2 Button
+    Move(592,136,104,24)
+    Enabled = False
+    Text = ("Back")
+  }
+  { Button3 Button
+    Move(592,304,104,24)
+    Text = ("Cancel")
+  }
+}

@@ -1,0 +1,20 @@
+' Gambas class file
+
+Public Init As Integer = 0
+
+Public Sub Form_Open()
+  Me.X = Screen.W / 2 - Me.W / 2
+  Me.Y = Screen.H / 2 - Me.H / 2
+End
+
+Public Sub Timer1_Timer()
+  init = init + 1
+  If init == 1 Then
+    Install()
+  Endif
+End
+
+Public Sub Install()
+  Print Shell("ls;echo $HOME >> /tmp/aaa")
+End
+
